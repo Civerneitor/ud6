@@ -8,7 +8,8 @@ public class ejercicio11 {
 		int n[] = new int[t];
 		int n2[] = n; //Apunta al array anterior por lo que lo tratará como un puntero y sobreescibirá sus datos si se intenta modificar
 		inValores(n,t);
-		inValores(n2,t);//El resultado serán los cuadrados de ésta generación de datos.
+		n2 = new int[t];
+		inValores(n2,t);
 		int res[] = multiplica(n,n2);
 		for(int i=0;i<res.length;i++) {
 			System.out.println("Posición "+i+" de Cada Array:");
